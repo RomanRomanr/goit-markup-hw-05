@@ -43,7 +43,7 @@
       <section class="title">
         <div class="container container-flex">
           <h1 class="general-title">Effective Solutions for Your Business</h1>
-          <button class="title-button">Order Service</button>
+          <button class="title-button" data-modal-open >Order Service</button>
         </div>
       </section>
       <section class="padding-for-section">
@@ -225,38 +225,7 @@
       </section>
 
 
-      <div class="modal-overlay">
-        <div class="modal">
-          <button class="close-button"><svg class="modal-icon_close icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg></button>
-          <p class="modal-info">Leave your contacts and we will call you back</p>
-          <form action="#">
-            <label class="modal-label" for="name">Name</label>
-            <div class="input-icon">
-              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="18"><use href="./images/icons.svg#icon-person"></use></svg></span>
-              <input class="modal-input" type="text" name="name" id="name" placeholder="" required />
-            </div>
-            <label class="modal-label" for="phone">Phone</label>
-            <div class="input-icon">
-              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="24"><use href="./images/icons.svg#icon-phone"></use></svg></span>
-              <input class="modal-input" type="tel" name="phone" id="phone" placeholder="" required />
-            </div>
-            <label class="modal-label" for="email">Email</label>
-            <div class="input-icon">
-              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="24"><use href="./images/icons.svg#icon-email"></use></svg></span>
-              <input class="modal-input" type="email" name="email" id="email" placeholder="" required />
-            </div>
-            <label class="comment" for="comment">Comment</label>
-            <textarea class="modal-textarea" name="comments" id="comment" placeholder="Text input" required></textarea>
-            <div class="checkbox-block">
-              <input class="visually-hidden"  type="checkbox" id="agreement" required />
-              <label class="checkbox-label" for="agreement"><span class="style-check_box"><svg class="icon-checkbox" width="10" height="8"><use href="./images/icons.svg#icon-vector"></use></svg></span>I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
-            </div>
-            <div class="button-box">
-              <button class="modal-button" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+      
 
 
     </main>
@@ -291,5 +260,38 @@
       </div>
       </div>
     </footer>
+    <div class="modal-overlay is-open" data-modal>
+        <div class="modal">
+          <button class="close-button" data-modal-close><svg class="modal-icon_close icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg></button>
+          <p class="modal-info">Leave your contacts and we will call you back</p>
+          <form action="#">
+            <label class="modal-label" for="name">Name</label>
+            <div class="input-icon">
+              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="18"><use href="./images/icons.svg#icon-person"></use></svg></span>
+              <input class="modal-input" type="text" name="name" id="name" placeholder="" required />
+            </div>
+            <label class="modal-label" for="phone">Phone</label>
+            <div class="input-icon">
+              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="24"><use href="./images/icons.svg#icon-phone"></use></svg></span>
+              <input class="modal-input" type="tel" name="phone" id="phone" placeholder="" required />
+            </div>
+            <label class="modal-label" for="email">Email</label>
+            <div class="input-icon">
+              <span class="box-for-modal_icons"><svg class="modal-icon-for_input" width="18" height="24"><use href="./images/icons.svg#icon-email"></use></svg></span>
+              <input class="modal-input" type="email" name="email" id="email" placeholder="" required />
+            </div>
+            <label class="comment" for="comment">Comment</label>
+            <textarea class="modal-textarea" name="comments" id="comment" placeholder="Text input" required></textarea>
+            <div class="checkbox-block">
+              <input class="visually-hidden checkbox-input"  type="checkbox" id="agreement" required />
+              <label class="checkbox-label" for="agreement"><span class="style-check_box"><svg class="icon-checkbox" width="10" height="8"><use href="./images/icons.svg#icon-vector"></use></svg></span><p>I accept the terms and conditions of the <a class="link-for-label-modal" href="#">Privacy Policy</a></p></label>
+            </div>
+            <div class="button-box">
+              <button class="modal-button" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
