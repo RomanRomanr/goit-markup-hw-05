@@ -465,12 +465,12 @@ letter-spacing: 0.02em;
 color: var(--white);
 
 }
-.box-for-input-button {
+/* .box-for-input-button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-}
+} */
 .footer-input {
   border: 1px solid var(--white);
 border-radius: 4px;
@@ -511,7 +511,6 @@ flex-direction: row;
 gap: 16px;
 font-weight: 500;
 font-size: 16px;
-/* line-height: 24px; */ 
 line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
@@ -552,11 +551,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   min-width: 408px;
   min-height: 584px;
-  background-color: var(--white);
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background-color: var(--dairy);
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 72px 24px 24px 24px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button {
   position: absolute;
@@ -564,14 +567,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   background-color: var(--cornflower);
-  border-radius: 100%;
+  border-radius: 50%;
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+}
+.modal-icon_close{
+  transition:  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon_close{
   fill: var(--navy-blue);
@@ -580,9 +587,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .close-button:hover .modal-icon_close{
   fill: var(--white);
 }
-.close-button:hover{
+.close-button:focus .modal-icon_close{
+  fill: var(--white);
+}
+.close-button:hover , .close-button:focus{
+  border: none;
   background-color: var(--ocean);
 }
+
 .modal-icon-for_input{
   position: absolute;
   left: 16px;
