@@ -487,6 +487,7 @@ color: var(--white);
 }
 .form-footer{
   display: flex;
+  gap: 24px;
 }
 .footer-input:focus {
   outline: none;
@@ -503,7 +504,7 @@ color: var(--white);
 }
 .footer-button {
   border: none;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   display: flex;
 align-items: center;
 justify-content: center;
@@ -517,10 +518,13 @@ text-align: center;
 color: var(--white);
 background-color: var(--iris);
 border-radius: 4px;
-width: 165px;
+min-width: 165px;
 height: 40px;
 cursor: pointer;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-icon{
+  margin-left: 16px;
 }
 .footer-button:hover {
   background-color: var(--ocean);
@@ -616,7 +620,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-label {
   display: block;
   margin-bottom: 4px;
-   line-height: 1.17;
+  line-height: 1.17;
 }
 .modal-label, .comment{
   font-weight: 400;
@@ -679,7 +683,7 @@ border-radius: 4px;
   align-items: center;
 }
 .modal-button {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: var(--iris);
 border-radius: 4px;
 min-width: 169px;
@@ -695,7 +699,6 @@ cursor: pointer;
 display: block;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 margin: 0 auto;
-
 }
 .modal-button:hover{
   background-color: var(--ocean);
