@@ -749,11 +749,25 @@ margin-bottom: 24px;
   opacity: 1;
 }
 .checkbox-input:checked + .checkbox-label .style-check_box {
+  fill: var(--cloud);
   background-color: var(--ocean);
+  border: none;
 }
 .link-for-label-modal{
 line-height: 1.33333;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: var(--iris);
+}
+.style-check_box{
+  display: inline-flex;
+}
+.comment{
+  line-height: 1.17;
+}
+.checkbox-label{
+  line-height: 1.17;
+}
+.modal-icon_close{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
