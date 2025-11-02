@@ -715,11 +715,11 @@ color: var(--navy-blue);
   margin-bottom: 24px;
 }
 .style-check_box{
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -729,7 +729,7 @@ color: var(--navy-blue);
 }
 
 .checkbox-label {
-  display: flex;
+  /* display: flex; */
   font-weight: 400;
 font-size: 12px;
 line-height: 1.16667;
@@ -758,15 +758,15 @@ text-decoration: underline;
 text-decoration-skip-ink: none;
 color: var(--iris);
 }
-.style-check_box{
+/* .style-check_box{
   display: inline-flex;
-}
+} */
 .checkbox-label{
   line-height: 1.17;
 }
 .modal-icon_close{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.d-inline-flex{
+/* .d-inline-flex{
   display: inline-flex;
-}
+} */
